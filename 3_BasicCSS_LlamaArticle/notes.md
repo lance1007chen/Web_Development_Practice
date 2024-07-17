@@ -113,15 +113,15 @@ As a side note, the prevalent way is to format for readability is:
 Each declaration has its own line.
 
 ### CSS Syntax
-```html!
+```css!
 selector { declaration; }
 ```
 Declaration consists of two parts:
-```html!
+```css!
 selector { property: value; }
 ```
 For example:
-```html!
+```css!
 p { color: blue; }
 ```
 
@@ -219,7 +219,7 @@ Of the three main things in CSS, which are inheritance, cascade, and specificity
 ### Combinator Selectors
 Combinator selectors are used when using more than one selector to target elements on a page.
 
-```html!
+```css!
 section p {
     color: orange;
     line-height: normal;
@@ -244,14 +244,14 @@ Only the paragraphs that are inside sections would apply.
 The [descendant combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator), typically represented by a single space (" ") character, combines two selectors such that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc.) element matching the first selector. Selectors that utilize a descendant combinator are called descendant selectors.
 
 #### Syntax
-```html!
+```css!
 selector1 selector2 {
     /* property declarations */
 }
 ```
 
 #### Example
-```html!
+```css!
 li {
     list-style-type: disc;
 }

@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+article {
+    width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+body {
+    color: #545454;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #d0d64c;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-family: Arial;
+    background-color: #575c04;
+    color: #f4f5d6;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 20px;
+    border: 5px solid #510808;
+    margin-bottom: 5px;
+}
