@@ -1,12 +1,12 @@
 #extraspecial {
-    color: red;
+	color: red;
 }
 
 .special {
-    color: green;
+	color: green;
 }
 
 body {
-    color: blue;
-    font-family: Arial;
+	color: blue;
+	font-family: Arial;
 }

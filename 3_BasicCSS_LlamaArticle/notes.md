@@ -41,12 +41,12 @@ Instead, a better way would be to add style tags inside the head.
 
 ```html!
 <head>
-    <meta charset="UTF-8">
-    <title>Llama Article</title>
-    
-    <style>
-        p { color: blue; }
-    </style>
+	<meta charset="UTF-8">
+	<title>Llama Article</title>
+	
+	<style>
+		p { color: blue; }
+	</style>
 
 </head>
 ```
@@ -71,16 +71,16 @@ In fact, the Inspector in Chrome shows that `color:blue` is crossed out and `col
 If want everything to be blue, can do this:
 ```html!
 <head>
-    <meta charset="UTF-8">
-    <title>Llama Article</title>
-    
-    <style>
-        body { color: blue; }
-    </style>
+	<meta charset="UTF-8">
+	<title>Llama Article</title>
+	
+	<style>
+		body { color: blue; }
+	</style>
 
 </head>
 <body>
-    ...
+	...
 </body>
 ```
 
@@ -95,19 +95,19 @@ Features like inheritance allow CSS to be cleaner, leaner, and more efficient co
 As a side note, the prevalent way is to format for readability is:
 ```html!
 <head>
-    <meta charset="UTF-8">
-    <title>Llama Article</title>
-    
-    <style>
-        body {
-            color: blue;
-            font-family: Arial;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>Llama Article</title>
+	
+	<style>
+		body {
+			color: blue;
+			font-family: Arial;
+		}
+	</style>
 
 </head>
 <body>
-    ...
+	...
 </body>
 ```
 Each declaration has its own line.
@@ -131,14 +131,14 @@ Just as HTML is very simple with tags and attributes, CSS is very simple with se
 ```html!
 <style>
 
-    body {
-        color: blue;
-        font-family: Arial;
-    }
+	body {
+		color: blue;
+		font-family: Arial;
+	}
 
-    p {
-        line-height: 2em;
-    }
+	p {
+		line-height: 2em;
+	}
 
 </style>
 ```
@@ -149,18 +149,18 @@ The cascade is when one element is affected by multiple rules. That is, the way 
 ```html!
 <style>
 
-    .special {
-        color: green;
-    }
+	.special {
+		color: green;
+	}
 
-    body {
-        color: blue;
-        font-family: Arial;
-    }
+	body {
+		color: blue;
+		font-family: Arial;
+	}
 
-    p {
-        line-height: 2em;
-    }
+	p {
+		line-height: 2em;
+	}
 
 </style>
 ```
@@ -182,22 +182,22 @@ As seen, the Inspector in Chrome shows that `color: blue` is crossed out and ove
 ```html!
 <style>
 
-    #extraspecial {
-        color: red;
-    }
+	#extraspecial {
+		color: red;
+	}
 
-    .special {
-        color: green;
-    }
+	.special {
+		color: green;
+	}
 
-    body {
-        color: blue;
-        font-family: Arial;
-    }
+	body {
+		color: blue;
+		font-family: Arial;
+	}
 
-    p {
-        line-height: 2em;
-    }
+	p {
+		line-height: 2em;
+	}
 
 </style>
 ```
@@ -221,19 +221,19 @@ Combinator selectors are used when using more than one selector to target elemen
 
 ```css!
 section p {
-    color: orange;
-    line-height: normal;
-    font-family: Gerogia;
+	color: orange;
+	line-height: normal;
+	font-family: Gerogia;
 }
 ```
 
 ```html!
 <section>
-    <h3>Mating</h3>
-    <p>Llamas mate with ...</p>
+	<h3>Mating</h3>
+	<p>Llamas mate with ...</p>
 
-    <h3>Gestation</h3>
-    <p>The gestation period ...</p>
+	<h3>Gestation</h3>
+	<p>The gestation period ...</p>
 </section>
 ```
 
@@ -246,37 +246,37 @@ The [descendant combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Des
 #### Syntax
 ```css!
 selector1 selector2 {
-    /* property declarations */
+	/* property declarations */
 }
 ```
 
 #### Example
 ```css!
 li {
-    list-style-type: disc;
+	list-style-type: disc;
 }
 
 li li {
-    list-style-type: circle;
+	list-style-type: circle;
 }
 ```
 
 ```html!
 <ul>
-    <li>
-        <div>Item 1</div>
-        <ul>
-            <li>Subitem A</li>
-            <li>Subitem B</li>
-        </ul>
-    </li>
-    <li>
-        <div>Item 2</div>
-        <ul>
-            <li>Subitem A</li>
-            <li>Subitem B</li>
-        </ul>
-    </li>
+	<li>
+		<div>Item 1</div>
+		<ul>
+			<li>Subitem A</li>
+			<li>Subitem B</li>
+		</ul>
+	</li>
+	<li>
+		<div>Item 2</div>
+		<ul>
+			<li>Subitem A</li>
+			<li>Subitem B</li>
+		</ul>
+	</li>
 </ul>
 ```
 
@@ -288,9 +288,9 @@ If there are many pages using similar styling, can reuse them for efficiency by 
 Add a self-closing link tag in the head tag. The link tag gets two attributes, hypertext reference and relationship attribute:
 ```html!
 <head>
-    <meta charset="UTF-8">
-    <title>Llama Article</title>
-    <link href="styles.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Llama Article</title>
+	<link href="styles.css" rel="stylesheet">
 </head>
 ```
 

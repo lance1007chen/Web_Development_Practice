@@ -3,15 +3,15 @@
 * By default, links are phrasing (or inline) elements.
 * They must include an `href` attribute (hypertext reference).
 * Can link to:
-    * an html page on another website.
-    * an html page on the same website.
-    * a section within the same page.
-    * a media file or some other file to be downloaded.
-    * nothing (a link can be empty).
+	* an html page on another website.
+	* an html page on the same website.
+	* a section within the same page.
+	* a media file or some other file to be downloaded.
+	* nothing (a link can be empty).
 * The content inside a link can be:
-    * text.
-    * an image.
-    * another element.
+	* text.
+	* an image.
+	* another element.
 
 ### External Link
 ```html!
@@ -38,7 +38,7 @@ File structure:
 ```
  |-- index.html
  |-- products
-         |-- cheese.html
+		 |-- cheese.html
 ```
 
 In `index.html`:
@@ -61,7 +61,7 @@ This link doesn't go anywhere. This can be used when a link is needed but the li
 ```html!
 <p>Here is a link to <a href="#contact">content on the page</a>.</p>
 <section id="contact">
-    <p>Here is the contact info.</p>
+	<p>Here is the contact info.</p>
 </section>
 ```
 This links to content on the same page. For this to do something noticeable, there has to be enough content on the page to scroll. Also, by default the section will move to the top of the viewport, but only if there is enough content on the page after the section.

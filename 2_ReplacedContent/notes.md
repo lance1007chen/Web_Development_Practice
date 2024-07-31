@@ -49,7 +49,7 @@ Note: Check [caniuse.com](https://caniuse.com) for support.
 ```html!
 <h2>Here is a video.</h2>
 <video controls width="800">
-    <source src="media/video.mp4" type="video/mp4">
+	<source src="media/video.mp4" type="video/mp4">
 </video>
 
 <h2>Here is an audio.</h2>
