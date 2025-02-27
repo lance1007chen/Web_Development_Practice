@@ -15,7 +15,7 @@ After normalizing:
 ![10](https://live.staticflickr.com/65535/53825971532_bb9d0133a6_o.jpg)
 
 ### Centering
-```css!
+```css
 article {
 	width: 700px;
 	margin: auto;
@@ -27,7 +27,7 @@ article {
 ![11](https://live.staticflickr.com/65535/53825971527_0869527606_o.jpg)
 
 ### Color, Size, Font Family, and Line Height
-```css!
+```css
 body {
 	color: #545454;
 	font-size: 1.5em;
@@ -43,7 +43,7 @@ p {
 
 ### Background Color
 Background color on whole page:
-```css!
+```css
 body {
 	background-color: #d0d64c;
 }
@@ -52,7 +52,7 @@ body {
 ![13](https://live.staticflickr.com/65535/53827213179_8805a0ba1f_o.jpg)
 
 Background color on article:
-```css!
+```css
 article {
 	background-color: white;
 }
@@ -61,7 +61,7 @@ article {
 ![14](https://live.staticflickr.com/65535/53827213164_81f327da89_o.jpg)
 
 Padding on article:
-```css!
+```css
 article {
 	background-color: white;
 	padding: 20px;
@@ -71,7 +71,7 @@ article {
 ![15](https://live.staticflickr.com/65535/53825971497_8818e48a5a_o.jpg)
 
 ### Style on Headings
-```css!
+```css
 h1, h2 {
 	text-transform: uppercase;
 	font-family: Arial;
@@ -92,10 +92,9 @@ This is taking advantage of the cascade on `h1`.
 ![16](https://live.staticflickr.com/65535/53827127838_15401cefaf_o.jpg)
 
 ### Style on Navigation
-
 #### Unordered List Styling
 Getting rid of bullet points:
-```css!
+```css
 nav ul {
 	list-style: none;
 }
@@ -116,8 +115,7 @@ nav ul {
 ![19](https://live.staticflickr.com/65535/53826888241_07f609edf3_o.jpg)
 
 #### Anchor Tags Styling
-
-```css!
+```css
 nav ul li a {
 	display: block;
 	text-decoration: none;
@@ -140,7 +138,7 @@ nav ul li a {
 #### Smooth Scroll
 As for now, clicking on the navigation links jumps right to the section. To make the transition scroll smoother, add this to the stylesheet:
 
-```css!
+```css
 html {
 	scroll-behavior: smooth;
 }

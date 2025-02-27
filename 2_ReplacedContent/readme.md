@@ -1,7 +1,7 @@
 ## Replaced Content
 
 ### Images
-```html!
+```html
 <p><img src="trophyroom.jpeg" alt="aj1"></p>
 ```
 
@@ -12,13 +12,12 @@ Takes up too much space:
 ![Screenshot 2024-06-07 at 2.37.51 PM](https://hackmd.io/_uploads/HJm-Rx-S0.jpg)
 
 Takes too long to load when on slow 3G network with cache disabled:
-
 ![Screenshot 2024-06-05 at 11.37.03 PM](https://hackmd.io/_uploads/BJRKoAR4C.png)
 
 The image should be kept under 200 KB.
 
 #### Providing Width and Height Attributes
-```html!
+```html
 <img src="trophyroom.jpeg" alt="aj1" width="1200" height="900">
 ```
 Width and height attributes provide information to the browser about how much space on the page the image is expected to take up. Note: Do not add px to the attribute values.
@@ -28,7 +27,7 @@ This can help hold the space for the image when the network is slow. If the spac
 If it is desired to display the image smaller, one possible way to do so is to scale down the width and height attribute, say 400x300. However, the image is still downloaded at 1200x900 and just displayed smaller at 400x300. Hence, using html to achieve this is undesirable, as the image is still forced to download at a large size. Instead, using CSS is more optimal. The attributes in the HTML should describe the actual size of the image.
 
 #### Common Image Formats
-* JPEG (or jpg) - Old lossy format. Most common for photographs.
+* JPEG (or JPG) - Old lossy format. Most common for photographs.
 * GIF - Graphical Interchange Format - This is what a lot of memes uses.
 * PNG - Portable Network Graphic - Has alpha channel, but file sizes get large for photographs. Best for graphics. Can be transparent.
 * SVG - Scalable Vector Graphics. Great format for vector graphics and icons.
@@ -46,7 +45,7 @@ SVG is represented as code. This looks similar to HTML as it has styling. File s
 Note: Check [caniuse.com](https://caniuse.com) for support.
 
 ### Video and Audio
-```html!
+```html
 <h2>Here is a video.</h2>
 <video controls width="800">
 	<source src="media/video.mp4" type="video/mp4">
@@ -57,7 +56,7 @@ Note: Check [caniuse.com](https://caniuse.com) for support.
 ```
 The video and audio tags are also examples of replaced content. Modern browsers provide the interfaces for these files and there are lots of built in controls and options.
 
-```html!
+```html
 <audio controls src="media/audio.mp3"></audio>
 <audio controls="controls" src="media/audio.mp3"></audio>
 ```
@@ -66,8 +65,18 @@ The video and audio tags are also examples of replaced content. Modern browsers 
 Note: Can find out more about video and audio on the MDN website.
 
 ### iFrame
-```html!
+```html
 <h2>Here is an iFrame.</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cd3khhCnnsY?si=rLf-avCy2YR6GlTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/Cd3khhCnnsY?si=rLf-avCy2YR6GlTP"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write;
+          encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
 ```
 An iFrame is also replaced content. It put a part of a webpage inside another web page. So, when embedding a YouTube video, actually is embedding a little bit of the YouTube website, the part that is just showing the video, right onto the page. The above code is obtained from any video from YouTube. Just click `Share` then `Embed`.

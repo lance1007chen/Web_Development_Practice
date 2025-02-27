@@ -39,7 +39,7 @@ Generally speaking, adding the style attribute is not the best practice, since i
 
 Instead, a better way would be to add style tags inside the head.
 
-```html!
+```html
 <head>
 	<meta charset="UTF-8">
 	<title>Llama Article</title>
@@ -69,7 +69,7 @@ In fact, the Inspector in Chrome shows that `color:blue` is crossed out and `col
 
 ### Inheritance in CSS
 If want everything to be blue, can do this:
-```html!
+```html
 <head>
 	<meta charset="UTF-8">
 	<title>Llama Article</title>
@@ -93,7 +93,7 @@ This is the concept of inheritance. All elements are inheriting styles from the 
 Features like inheritance allow CSS to be cleaner, leaner, and more efficient code.
 
 As a side note, the prevalent way is to format for readability is:
-```html!
+```html
 <head>
 	<meta charset="UTF-8">
 	<title>Llama Article</title>
@@ -113,22 +113,22 @@ As a side note, the prevalent way is to format for readability is:
 Each declaration has its own line.
 
 ### CSS Syntax
-```css!
+```css
 selector { declaration; }
 ```
 Declaration consists of two parts:
-```css!
+```css
 selector { property: value; }
 ```
 For example:
-```css!
+```css
 p { color: blue; }
 ```
 
 Just as HTML is very simple with tags and attributes, CSS is very simple with selectors and declarations.
 
 ### Cascade in CSS
-```html!
+```html
 <style>
 
 	body {
@@ -146,7 +146,7 @@ Just as HTML is very simple with tags and attributes, CSS is very simple with se
 The cascade is when one element is affected by multiple rules. That is, the way an element looks is due to a combination of rules. This combination of different rules to end up with one rendering is the cascade. With more practice, more and more efficient cascading can be acheived.
 
 ### Specificity in CSS
-```html!
+```html
 <style>
 
 	.special {
@@ -179,7 +179,7 @@ As seen, the Inspector in Chrome shows that `color: blue` is crossed out and ove
 
 ---
 
-```html!
+```html
 <style>
 
 	#extraspecial {
@@ -219,7 +219,7 @@ Of the three main things in CSS, which are inheritance, cascade, and specificity
 ### Combinator Selectors
 Combinator selectors are used when using more than one selector to target elements on a page.
 
-```css!
+```css
 section p {
 	color: orange;
 	line-height: normal;
@@ -227,7 +227,7 @@ section p {
 }
 ```
 
-```html!
+```html
 <section>
 	<h3>Mating</h3>
 	<p>Llamas mate with ...</p>
@@ -244,14 +244,14 @@ Only the paragraphs that are inside sections would apply.
 The [descendant combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator), typically represented by a single space (" ") character, combines two selectors such that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc.) element matching the first selector. Selectors that utilize a descendant combinator are called descendant selectors.
 
 #### Syntax
-```css!
+```css
 selector1 selector2 {
 	/* property declarations */
 }
 ```
 
 #### Example
-```css!
+```css
 li {
 	list-style-type: disc;
 }
@@ -261,7 +261,7 @@ li li {
 }
 ```
 
-```html!
+```html
 <ul>
 	<li>
 		<div>Item 1</div>
@@ -286,7 +286,7 @@ li li {
 If there are many pages using similar styling, can reuse them for efficiency by putting them in an external linked file.
 
 Add a self-closing link tag in the head tag. The link tag gets two attributes, hypertext reference and relationship attribute:
-```html!
+```html
 <head>
 	<meta charset="UTF-8">
 	<title>Llama Article</title>
